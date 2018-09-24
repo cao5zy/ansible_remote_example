@@ -1,0 +1,14 @@
+---
+
+- name: deploy to remote
+  hosts: web
+  become: True
+  become_method: sudo
+
+  tasks:
+  - name: init the root folder
+    file:
+      path: /var/workspace
+      state: directory
+
+...
