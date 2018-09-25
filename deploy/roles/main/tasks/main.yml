@@ -1,0 +1,13 @@
+---
+
+- name: init the deploy folder
+  file:
+    path: "./app1"
+    state: directory
+
+- name: copy files to deploy folder
+  synchronize:
+    src: "src"
+    dest: "./app1"
+    
+...
