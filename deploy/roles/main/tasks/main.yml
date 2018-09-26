@@ -7,7 +7,7 @@
 
 - name: copy files to deploy folder
   synchronize:
-    src: "src"
+    src: "./src/"
     dest: "./app1"
     
 ...
